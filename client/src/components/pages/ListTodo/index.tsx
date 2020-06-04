@@ -94,7 +94,7 @@ export const ListTodo = () => {
         autocapitalize: "off",
         maxLength: "80",
       },
-      inputValue:description,
+      inputValue: description,
       showCancelButton: true,
       confirmButtonText: "OK",
       showLoaderOnConfirm: true,
@@ -155,7 +155,7 @@ export const ListTodo = () => {
                         {description}
                       </Typography>
                     </Grid>
-                    <Grid item lg={1} xs={1}>
+                    <Grid item lg={1} xs={1} style={{ textAlign: "right" }}>
                       <Checkbox
                         color="primary"
                         checked={is_done}
@@ -163,7 +163,7 @@ export const ListTodo = () => {
                       />
                     </Grid>
 
-                    <Grid item lg={1} xs={1}>
+                    <Grid item lg={1} xs={1} style={{ textAlign: "right" }}>
                       <IconButton
                         color="primary"
                         aria-label="delete todo"

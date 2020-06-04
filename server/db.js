@@ -1,11 +1,15 @@
 const Pool = require("pg").Pool;
+const config = require("config");
+const DB = config.get("dbConfig");
+
+const { user, password, host, port, database } = DB;
 
 const pool = new Pool({
-  user: process.env.user,
-  password: process.env.password,
-  host: process.env.host,
-  port: process.env.port,
-  database: process.env.database,
+  user,
+  password,
+  host,
+  port,
+  database,
 });
 
 module.exports = pool;

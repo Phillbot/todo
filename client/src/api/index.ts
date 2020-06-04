@@ -1,5 +1,5 @@
 export const api = {
-  baseUrl: "http://localhost:5000/",
+  baseUrl: "http://localhost:5000/api/",
 
   get: {
     getAllTodos: "todos/get-all/",
@@ -7,11 +7,13 @@ export const api = {
   },
   post: {
     postNewTodo: "todos/new/",
+    login: "auth/login/",
+    register: "auth/register/",
   },
 
   put: {
     editTodo: "todos/edit-description/",
-    editItsDone: "todos-done/",
+    editItsDone: "todos/todos-done/",
   },
 
   delete: {
